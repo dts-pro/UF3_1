@@ -75,4 +75,3 @@ Aquesta és la funcionalitat de l'aplicació. Aquesta línia mostra l'ús d'un n
 Totes les instruccions (creació de variables, anomenades a mètodes,assignacions) s'han de finalitzar amb un **punt i coma**.
 
 :::
-
