@@ -1,4 +1,4 @@
-# 1. Introducció
+# 1. Introducci
 
 **Java** és un llenguatge de programació de propòsit **general, concurrent i orientat a objectes** que va ser dissenyat específicament per a tindre tan poques dependències d'implementació com fora possible. El seu objectiu és permetre que els desenvolupadors d'aplicacions escriguen el programa una vegada i l'executen en qualsevol dispositiu (conegut en anglés com WORA, o "write once, run anywhere"), la qual cosa vol dir que **el codi pot escriure's una sola vegada i ser executat en qualsevol mena de dispositius (PC, mòbil, etc.)**.
 
