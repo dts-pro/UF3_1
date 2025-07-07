@@ -29,3 +29,4 @@ jobs:
           git add -f docs
           git commit -m "chore: update docs [skip ci]" || echo "No changes to commit"
           git push
+
