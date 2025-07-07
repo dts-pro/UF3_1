@@ -5,9 +5,9 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
   lang: 'ca-ES',
-  title: 'UF3',
+  title: 'UF3.1-old',
   description: 'Descripció',
-  base: '/UF3/',
+  base: '/UF3_1_old/',
   outDir: '../docs',
   markdown: {
     config(md) {
