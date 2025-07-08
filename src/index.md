@@ -45,4 +45,3 @@ Aquest curs segueix una metodologia d'aprenentatge actiu, combinant teoria i pr�
 - 📝 Exercicis pràctics
 
 :::
-
