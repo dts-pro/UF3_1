@@ -27,27 +27,23 @@ export default withMermaid({
     //['link', { rel: 'icon', type: 'image/png', href: '/img/logo.png' }]
   ],
   themeConfig: {
-    siteTitle: 'Introducció a la Programació',
+    siteTitle: 'Introducció a Java',
     logo: '/img/logo.png',
     nav: [
       { text: '🏠 Inici', link: '/' },
       { text: '📋 Objectius', link: '/objectius' },
       { text: '📚 Continguts', items: [
         { text: '1. Introducció', link: '/1-introduccio' },
-        { text: '2. Elements bàsics', link: '/2-elements' },
-        { text: '3. Tipus de dades', link: '/3-dades' },
-        { text: "4. Declaració de variables", link: '/4-variables' },
-        { text: "5. Operadors", link: '/5-operadors' },
-        { text: "6. Literals", link: '/6-literals' },
-        { text: "7. Eixida i entrada estàndard", link: '/7-ioestandard' },
-        { text: "8. Estructures alternatives", link: '/8-estructures' },
-        { text: "Exemples", link: '/9-exemples' },
-        { text: "Exercicis", link: '/10-exercicis' },
+        { text: "2. Tipus d'IDE", link: '/2-tipus_ides' },
+        { text: '3. Extensions', link: '/3-extensions' },
+        { text: "4. Projectes", link: '/4-projectes' },
+        { text: "5. Depuració", link: '/5-depuracio' },
+        { text: "6. Control de versions", link: '/6-control_versions' },
+        { text: "✏️Exercicis", link: '/7-exercicis' },
       ]},
       { text: '📚 Continguts addicionals', items: [
-        { text: 'Les classes Math, String i Scanner', link: '/11-add_intro' },
-        { text: 'Operador condicional', link: '/12-operador_cond' },
-        { text: 'Guia de NetBeans', link: '/13-guia_netbeans' },
+        { text: 'Guia configuració Netbeans', link: '/8-guia_netbeans' },
+        { text: 'Guia configuració VSC', link: '/9-guia_vsc' },
       ]}
     ],
     sidebar: [
@@ -55,21 +51,17 @@ export default withMermaid({
         text: '📚 Continguts',
         items: [
           { text: '1. Introducció', link: '/1-introduccio' },
-          { text: '2. Elements bàsics', link: '/2-elements' },
-          { text: '3. Tipus de dades', link: '/3-dades' },
-          { text: "4. Declaració de variables", link: '/4-variables' },
-          { text: "5. Operadors", link: '/5-operadors' },
-          { text: "6. Literals", link: '/6-literals' },
-          { text: "7. Eixida i entrada estàndard", link: '/7-ioestandard' },
-          { text: "8. Estructures alternatives", link: '/8-estructures' },
-          { text: "💡Exemples", link: '/9-exemples' },
-          { text: "✏️Exercicis", link: '/10-exercicis' },
+          { text: "2. Tipus d'IDE", link: '/2-tipus_ides' },
+          { text: '3. Extensions', link: '/3-extensions' },
+          { text: "4. Projectes", link: '/4-projectes' },
+          { text: "5. Depuració", link: '/5-depuracio' },
+          { text: "6. Control de versions", link: '/6-control_versions' },
+          { text: "✏️Exercicis", link: '/7-exercicis' },
         ]
       },
       { text: '📚 Continguts addicionals', items: [
-        { text: 'Les classes Math, String i Scanner', link: '/11-add_intro' },
-        { text: 'Operador condicional', link: '/12-operador_cond' },
-        { text: 'Guia de NetBeans', link: '/13-guia_netbeans' },
+        { text: 'Guia configuració Netbeans', link: '/8-guia_netbeans' },
+        { text: 'Guia configuració VSC', link: '/9-guia_vsc' },
         { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
         { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
       ]}
@@ -90,4 +82,3 @@ export default withMermaid({
     }
   }
 })
-

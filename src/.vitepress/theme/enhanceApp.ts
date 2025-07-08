@@ -3,7 +3,7 @@ import type { EnhanceAppContext } from 'vitepress'
 export default function customEnhanceApp(ctx: EnhanceAppContext) {
   if (typeof window === 'undefined') return
 
-  const desiredTabs = ['Java']  // Només volem mostrar “Java”
+  const desiredTabs = ['Java']  // Només volem mostrar "Java"
 
   const hideUnwantedTabs = () => {
     // 1) recórrer cada bloc de pestanyes

@@ -1,77 +1,68 @@
 # 1. Introducció
 
-**Java** és un llenguatge de programació de propòsit **general, concurrent i orientat a objectes** que va ser dissenyat específicament per a tindre tan poques dependències d'implementació com fora possible. El seu objectiu és permetre que els desenvolupadors d'aplicacions escriguen el programa una vegada i l'executen en qualsevol dispositiu (conegut en anglés com WORA, o "write once, run anywhere"), la qual cosa vol dir que **el codi pot escriure's una sola vegada i ser executat en qualsevol mena de dispositius (PC, mòbil, etc.)**.
+Un **entorn de desenvolument integrat (IDE - "Integrated Development Environment")** és una aplicació informàtica que proporciona serveis integrals per al desenvolupament de programari. Els IDEs combinen un editor de codi font, eines de compilació, depuradors i altres utilitats en una sola interfície gràfica d'usuari.
 
-Algunes de les característiques més importants de Java són:
+Els **avantatges principals** d'utilitzar un IDE inclouen:
 
-- **Senzill**: És un llenguatge senzill d'aprendre.
-- **Orientat a Objectes**: Possiblement és el llenguatge més orientat a objectes de tots els existents; a Java, a excepció dels tipus fonamentals de variables (int, char, long…), tot és un objecte.
-- **Distribuït**: Java està molt orientat al treball en xarxa, suportant protocols com TCP/IP, UDP, HTTP i FTP. D'altra banda l'ús d'aquests protocols és bastant senzill comparant-lo amb altres llenguatges que els suporten.
-- **Robust**: El compilador Java detecta molts errors que altres compiladors només detectarien en temps d'execució o fins i tot mai.
-- **Assegurança**: Sobretot un tipus de desenvolupament: els Miniaplicació. Aquests són programes dissenyats per a ser executats en una pàgina web.
-- **Portable**: A Java no hi ha aspectes dependents de la implementació, totes les implementacions de Java segueixen els mateixos estàndards quant a grandària i emmagatzematge de les dades.
-- **Arquitectura Neutral**: El codi generat pel compilador Java és independent del'arquitectura: podria executar-se en un entorn UNIX, Mac, Windows, Mòbil, etc.
-- **Rendiment mitjà**: Actualment la velocitat de processament del codi Java és semblant a la d'altres llenguatges orientats a objectes.
-- **Multithread**: Suporta de manera nativa els threads (fils d'execució), sense necessitat de l'ús de de llibreries específiques.
+- **Productivitat millorada** gràcies a l'autocompletat de codi i la detecció d'errors en temps real
+- **Depuració integrada** amb punts de ruptura, inspecció de variables i execució pas a pas
+- **Gestió de projectes** simplificada amb organització automàtica de fitxers i recursos
+- **Integració amb sistemes de control de versions** com Git
+- **Refactoring automatitzat** per a millorar l'estructura del codi sense canviar la funcionalitat
+- **Suport per a múltiples llenguatges** de programació
+- **Extensions i plugins** per a funcionalitats específiques
 
-## 1.1. Primer exemple
+## 1.1. Tipus d'IDEs
 
-L'aplicació més xicoteta possible és la que simplement imprimeix un missatge en la pantalla. Tradicionalment, el missatge sol ser "Hola Mundo!". Això és justament el que fa el següent fragment de codi:
+Els IDEs es poden classificar segons diferents criteris:
 
-::: tabs
-== Java
-```java
-public class HolaMon{
-    public static void main(String[] args){
-        System.out.printin("Hola món!");
-    }
-}
-```
+**Per especialització:**
+- **IDEs específics**: Dissenyats per a un llenguatge o plataforma concreta
+- **IDEs generals**: Suporten múltiples llenguatges de programació mitjançant extensions
 
-:::
+**Per model de llicència:**
+- **IDEs lliures i de codi obert**: Gratuïts i amb codi font disponible
+- **IDEs comercials**: De pagament amb suport professional
+- **IDEs freemium**: Versió gratuïta amb funcionalitats limitades i versió de pagament completa
 
-Cal veure detalladament l'aplicació anterior, línia a línia. Aqueixes línies de codi contenen els components mínims per a imprimir *Hola Món!* en la pantalla. És un exemple molt simple, que no instància objectes de cap altra classe; no obstant això, accedeix a una altra classe inclosa en el JDK.
+**Per plataforma:**
+- **IDEs multiplataforma**: Funcionen en Windows, macOS i Linux
+- **IDEs específics de plataforma**: Dissenyats per a un sistema operatiu concret
 
-::: tabs
-== Java
+## 1.2. Funcionalitats Bàsiques dels IDEs
 
-```java
-public class HolaMon
-```
+### 1.2.1. Editor de Codi
 
-:::
+L'editor de codi és el component central de qualsevol IDE i ofereix:
 
-Aquesta línia declara la classe HolaMundo. El nom de la classe especificat en el fitxer font s'utilitza per a crear un fitxer nombredeclase.class en el directori en el qual es compila l'aplicació. En aquest cas, el compilador crearà un fitxer anomenat HolaMundo.class.
+**Sintaxi destacada**: Colorejat automàtic del codi segons el llenguatge de programació per a millorar la llegibilitat.
 
-::: tabs
-== Java
+**Autocompletat intel·ligent**: Suggeriments automàtics de mètodes, variables i paraules clau mentre s'escriu el codi.
 
-```java
-public static void main(String[] args)
-```
+**Detecció d'errors**: Identificació d'errors sintàctics i semàntics en temps real amb indicadors visuals.
 
-:::
+**Plegament de codi**: Capacitat de col·lapsar blocs de codi per a millorar la navegació en fitxers grans.
 
-Aquesta línia especifica un mètode que l'intèrpret Java busca per a executar en primer lloc. Igual que en altres llenguatges, Java utilitza una paraula clau main per a especificar la primera funció a executar. En aquest exemple tan simple no es passen arguments.
+**Navegació ràpida**: Salts directes a definicions de funcions, classes o variables.
 
-- **public** significa que el mètode main() pot ser cridat per qualsevol, incloent l'intèrpret Java.
-- **static** és una paraula clau que li diu al compilador que main es refereix a la pròpia classe HolaMundo i no a cap instància de la classe. D'aquesta manera, si algú intenta fer una altra instància de la classe, el mètode main() no s'instanciaria.
-- **void** indica que main() no retorna res. Això és important ja que Java realitza una estricta comprovació de tipus, incloent els tipus que s'ha declarat que retornen els mètodes.
-- **args[]** és la declaració d'un array de Strings. Aquests són els arguments escrits després del nom de la classe en la línia de comandos: java HolaMundo arg1 arg2.
+### 1.2.2. Gestió de Fitxers i Navegació
 
-::: tabs
-== Java
+Els IDEs proporcionen diferents vistes per a organitzar i navegar pel codi:
 
-```java
-System.out.println("Hola Món!");
-```
+**Vista de projectes**: Mostra l'estructura lògica del projecte organitzada per paquets o mòduls.
 
-:::
+**Vista de fitxers**: Presenta l'estructura física de directoris i fitxers del sistema d'arxius.
 
-Aquesta és la funcionalitat de l'aplicació. Aquesta línia mostra l'ús d'un nom de classe i mètode. S'usa el **mètode println()** de la **classe out** que està en el **paquet System**. El mètode println() agafa una cadena com a argument i l'escriu en el stream d'eixida estàndard; en aquest cas, la finestra on es llança l'aplicació. La classe PrintStream té un mètode instanciable anomenat println(), que el que fa és presentar en l'eixida estàndard del Sistema l'argument que se li passe. En aquest cas, s'utilitza la variable o instància d'out per a accedir al mètode.
+**Vista d'esquema**: Mostra la jerarquia de classes, mètodes i variables dins d'un fitxer.
 
-::: tip **IMPORTANT!**
+**Navegació per pestanyes**: Permet mantindre múltiples fitxers oberts simultàniament.
 
-Totes les instruccions (creació de variables, anomenades a mètodes,assignacions) s'han de finalitzar amb un **punt i coma**.
+### 1.2.3. Cerca i Substitució
 
-:::
+Els IDEs ofereixen potents eines de cerca:
+
+- **Cerca simple** en el fitxer actual
+- **Cerca global** en tot el projecte
+- **Cerca amb expressions regulars** per a patrons complexes
+- **Cerca i substitució massiva** amb vista prèvia dels canvis
+- **Cerca de referències** per a trobar tots els usos d'una variable o funció
