@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as i,a4 as r}from"./chunks/framework.DZjLypd3.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"2-tipus_ides.md","filePath":"2-tipus_ides.md"}'),s={name:"2-tipus_ides.md"};function n(o,t,l,d,p,u){return i(),a("div",null,t[0]||(t[0]=[r("",34)]))}const m=e(s,[["render",n]]);export{g as __pageData,m as default};
