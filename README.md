@@ -26,4 +26,3 @@ yarn serve # o npm run serve
 El flujo de trabajo de GitHub Actions (`.github/workflows/deploy.yml`) construye y publica automáticamente la documentación en GitHub Pages al hacer push a la rama `main`.
 
 Asegúrate de que GitHub Pages esté configurado para servir desde la carpeta `/docs/docs/.vitepress/dist` del branch `gh-pages`.
-
